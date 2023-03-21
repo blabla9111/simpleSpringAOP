@@ -11,4 +11,6 @@ public interface EmployeeService {
     ResponseEntity<Employee> saveEmployee(Employee employee);
 
     ResponseEntity<LinkedList<Employee>> getAllEmployee();
+
+    ResponseEntity<Employee> getMainEmployee(String id);
 }
