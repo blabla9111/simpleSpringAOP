@@ -24,7 +24,6 @@ public class Employee {
     }
 
     public static Employee add(Employee employee) {
-        System.out.println(employee.id+" "+employee.name);
         employees.add(employee);
         return employee;
     }

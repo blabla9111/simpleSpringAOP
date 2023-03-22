@@ -17,6 +17,11 @@ public class EmployeeController {
         this.empoyeeService = empoyeeService;
     }
 
+    @GetMapping("/main/{id}")
+    public ResponseEntity<Employee> getMainEmployee(@PathVariable String id){
+        return empoyeeService.getMainEmployee(id);
+    }
+
     @GetMapping("/get/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable String id){
         return empoyeeService.getEmployeeById(id);
